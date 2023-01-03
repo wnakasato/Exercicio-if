@@ -1,0 +1,221 @@
+//exercicio 1
+
+programa {
+  funcao inicio() {
+
+    inteiro n1
+
+    escreva ("digite um numero " )
+    leia (n1)
+    
+    se (n1 %2 == 0 ) 
+    
+    escreva("O numero é par e ")
+    senao 
+    escreva ("o numero é impar e ")
+  
+
+    se (n1>0)
+    escreva(" O numero ", n1, " é positivo ")
+
+    senao 
+    escreva ("O numero ", n1 "é negativo")
+    }
+
+  }
+}
+
+// exercicio 2
+
+   inteiro Item
+   inteiro Quantidade
+   real Valor
+   Item = 0
+   Quantidade = 0
+   Valor = 0 
+   escreva("########## ##### #########   Menu Marketplace   ########## ######## ##########\n")
+
+   escreva ("\n Digite o item 1 para Cachorro-quente 10.00 R$ ")
+   escreva ("\n Digite o item 2 para X-Salada 15.00 R$ ")
+   escreva ("\n Digite o item 3 para X-Bacon 18.00 R$ ") 
+   escreva ("\n Digite o item 4 para Bauru 12.00 R$ ") 
+   escreva ("\n Digite o item 5 para Refrigerante 8.00 R$ ") 
+   escreva ("\n Digite o item 6 para suco de laranga 13.00 R$ ")
+   escreva("\n")
+   escreva ( "\nInforme o Item desejado: ")
+   leia(Item)
+   // caso 1 
+
+   se (Item == 1){
+      escreva ("Digite a quantidade: ")
+      leia(Quantidade)
+      Valor = (10.00 * Quantidade)
+      escreva ("\n Produto : ", Item)
+      escreva ("\n Valor total do produto: ", Valor, " R$")
+   }
+
+   // caso 2
+   se (Item == 2){
+      escreva ("Digite a quantidade: ")
+      leia(Quantidade)
+      Valor = (15.00 * Quantidade)
+      escreva ("\n Produto : ", Item)
+      escreva ("\n Valor total do produto: ", Valor, " R$")
+   }
+   // caso 3
+      se (Item == 3){
+      escreva ("Digite a quantidade: ")
+      leia(Quantidade)
+      Valor = (18.00 * Quantidade)
+      escreva ("\n Produto : ", Item)
+      escreva ("\n Valor total do produto: ", Valor, " R$")
+   }
+
+  // caso 4
+      se (Item == 4){
+      escreva ("Digite a quantidade: ")
+      leia(Quantidade)
+      Valor = (12.00 * Quantidade)
+      escreva ("\n Produto : ", Item)
+      escreva ("\n Valor total do produto: ", Valor, " R$")
+  }
+
+  }
+
+  // caso 5
+      se (Item == 5){
+      escreva ("Digite a quantidade: ")
+      leia(Quantidade)
+      Valor = (8.00 * Quantidade)
+      escreva ("\n Produto : ", Item)
+      escreva ("\n Valor total do produto: ", Valor, " R$")
+  }
+
+  // caso 5
+      se (Item == 6){
+      escreva ("Digite a quantidade: ")
+      leia(Quantidade)
+      Valor = (13.00 * Quantidade)
+      escreva ("\n Produto : ", Item)
+      escreva ("\n Valor total do produto: ", Valor, " R$")
+
+}
+
+ //exercicio 3
+
+ programa {
+   inclua biblioteca Matematica --> math 
+  funcao inicio() {
+   
+
+    real salario, imposto
+
+    escreva("Digite seu salário para a vericação de imposto de renda:")
+    leia(salario)
+    
+    se(salario == 2000){
+    escreva("voce é isento do imposto de renda ")
+    }
+     senao se(salario>2000 e salario<=3000){
+        imposto = (8/ 100) * salario
+        escreva("voce tem que pagar 8% de imposto de renda e o valor em imposto ", math.arredondar(imposto,2))
+    }
+     senao se(salario>3000 e salario<=4500){
+      imposto = (18 / 100) * salario
+      escreva("voce tem que pagar 18% de imposto de renda e o valor em imposto ", math.arredondar(imposto,2))
+    } 
+    senao se(salario>4500){
+    imposto = (18 / 100) * salario
+      escreva("voce tem que pagar 28% de imposto de renda e o valor em imposto ", math.arredondar(imposto,2))
+
+    }
+  
+  }
+}
+
+
+// exercicio 4
+
+cadeia palavra,tipo,tipo2
+
+ escreva("Qual tipo de animal: Vertebrado ou Invertebrado ")
+ leia(palavra)
+
+
+
+
+se(palavra == "vertebrado"){
+
+     escreva("Escolha Ave ou Mamifero ")
+     leia(tipo)
+
+            se(tipo == "ave"){
+            escreva("Escolha carnivoro ou onivoro ")
+            leia(tipo2)
+
+                  se(tipo2 == "carnivoro"){
+
+                  escreva("Seu animal é Águia")
+                  }senao{
+                  escreva("Seu animal é Pomba")
+                  }
+
+
+     }senao{
+//mamifero
+
+     escreva("Escolha herbivoro ou onivoro")
+     leia(tipo2)
+
+             se(tipo2 =="herbivoro"){
+
+             escreva("Seu animal é Vaca")
+             }senao{
+             escreva("Seu animal é homem")
+             }
+
+        }  
+
+
+  
+}senao{
+//invertebrado
+
+escreva("Escolha Inseto ou anelideo ")
+leia(tipo)
+
+se(tipo == "Inseto"){
+escreva("Escolha hematofago ou herbivoro ")
+leia(tipo2)
+
+se(tipo2=="hematofago"){
+
+escreva("Seu animal é pulga")
+
+}senao{
+  //herbivoro
+  escreva("Seu animal é lagarta")
+}
+
+}senao{
+  //anelideo
+  escreva("Escolha hematofago ou herbivoro ")
+leia(tipo2)
+
+se(tipo2=="herbivoro"){
+escreva("Seu animal é minhoca")
+}senao{
+escreva("Seu animal é sanguessuga")
+}
+
+
+}
+
+
+}
+
+  }
+}
+
+  }
+}

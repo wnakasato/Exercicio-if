@@ -1,0 +1,22 @@
+programa {
+  funcao inicio() {
+    
+    inteiro num 
+
+    escreva("digite uma idade ")
+    leia (num)
+
+    se(num>=65)
+    escreva("A pessoa esta apta a votar mas o voto é facultativo")
+    senao se (num >=18 e num <65)
+    escreva("A pessoa esta apta a votar e o voto é obrigatorio")
+    senao se (num >=16 e num <18)
+     escreva("A pessoa esta apta a votar mas o voto é facultativo")
+    senao se (num<16)
+     escreva("A pessoa nao esta apta a votar ")
+
+  }
+}
+
+
+ 

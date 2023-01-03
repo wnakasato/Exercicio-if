@@ -1,0 +1,29 @@
+programa {
+   inclua biblioteca Matematica --> math 
+  funcao inicio() {
+   
+
+    real salario, imposto
+
+    escreva("Digite seu salário para a vericação de imposto de renda:")
+    leia(salario)
+    
+    se(salario == 2000){
+    escreva("voce é isento do imposto de renda ")
+    }
+     senao se(salario>2000 e salario<=3000){
+        imposto = (8/ 100) * salario
+        escreva("voce tem que pagar 8% de imposto de renda e o valor em imposto ", math.arredondar(imposto,2))
+    }
+     senao se(salario>3000 e salario<=4500){
+      imposto = (18 / 100) * salario
+      escreva("voce tem que pagar 18% de imposto de renda e o valor em imposto ", math.arredondar(imposto,2))
+    } 
+    senao se(salario>4500){
+    imposto = (18 / 100) * salario
+      escreva("voce tem que pagar 28% de imposto de renda e o valor em imposto ", math.arredondar(imposto,2))
+
+    }
+  
+  }
+}
